@@ -1,0 +1,7 @@
+.not-found-title {
+  margin-top: 100px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(57, 74, 82);
+  user-select: none;
+}

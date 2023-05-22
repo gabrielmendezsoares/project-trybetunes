@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import Header from './Header';
+import '../styles/NotFound.css';
 
 class NotFound extends Component {
-  render() {
+  render () {
     return (
-      <div data-testid="page-not-found">NotFound</div>
+      <div className="not-found">
+        <Header />
+
+        <h1 className="not-found-title" >Oops...</h1>
+      </div>
     );
   }
 }
