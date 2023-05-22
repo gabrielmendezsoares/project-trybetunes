@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import ProfileEdit from './ProfileEdit';
 import Profile from './Profile';
 import Favorites from './Favorites';
@@ -12,7 +12,7 @@ import '../styles/App.css';
 class App extends React.Component {
   render () {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route path="project-trybetunes/profile/edit" render={(props) => <ProfileEdit {...props} />} exact />
           <Route path="project-trybetunes/profile" component={Profile} exact />
@@ -22,7 +22,7 @@ class App extends React.Component {
           <Route path="project-trybetunes/" render={(props) => <Login {...props} />} exact />
           <Route path="*" component={NotFound} exact />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
