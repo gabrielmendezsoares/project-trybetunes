@@ -1,0 +1,186 @@
+.profile-edit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-edit-banner-container {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-image: url('../assets/Background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-edit-banner-title {
+  font-size: 3.5rem;
+  color: white;
+  user-select: none;
+}
+
+.profile-edit-information-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-edit-preview-container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(159, 86, 255);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-edit-user-preview {
+  width: 150px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.profile-edit-user-label {
+  margin-bottom: 10px;
+  align-self: flex-start;
+  font-weight: 400;
+  color: rgb(159, 86, 255);
+  user-select: none;
+}
+
+.profile-edit-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-edit-user-name {
+  width: 450px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(159, 86, 255);
+  background-color: transparent;
+  border: 1px solid rgb(159, 86, 255);
+  border-radius: 10px;
+  outline: none;
+}
+
+.profile-edit-email-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-edit-user-email {
+  width: 450px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(159, 86, 255);
+  background-color: transparent;
+  border: 1px solid rgb(159, 86, 255);
+  border-radius: 10px;
+  outline: none;
+}
+
+.profile-edit-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-edit-user-image {
+  width: 450px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(159, 86, 255);
+  background-color: transparent;
+  border: 1px solid rgb(159, 86, 255);
+  border-radius: 10px;
+  outline: none;
+}
+
+.profile-edit-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-edit-user-description {
+  width: 450px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(159, 86, 255);
+  background-color: transparent;
+  border: 1px solid rgb(159, 86, 255);
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+
+.profile-edit-save-button {
+  width: 160px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(159, 86, 255);
+  box-shadow: 0 0 10px rgba(159, 86, 255, 0);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s, background-color 0.3s;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.profile-edit-save-button:hover {
+  box-shadow: 0 0 10px rgb(159, 86, 255);
+  transition: box-shadow 0.3s;
+}
+
+.profile-edit-save-button:disabled {
+  box-shadow: 0 0 10px rgba(159, 86, 255, 0);
+  background-color: grey;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}

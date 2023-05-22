@@ -1,0 +1,53 @@
+.music-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+}
+
+.music-card:hover {
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+
+.music-card-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.music-card-title {
+  width: 150px;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(57, 74, 82);
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+}
+
+.music-card-input {
+  padding: 10px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.music-card-input:checked {
+  background-image: url('../assets/Favorited.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.music-card-input:not(:checked) {
+  background-image: url('../assets/Favorite.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,238 @@
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-banner-container {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-image: url('../assets/Background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search-banner-title {
+  font-size: 3.5rem;
+  color: white;
+  user-select: none;
+}
+
+.search-form-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.search-artist-input {
+  width: 450px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(57, 74, 82);
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.search-artist-input::placeholder {
+  color: rgb(155, 155, 155);
+}
+
+.search-artist-input:focus {
+  border: 1px solid rgb(159, 86, 255);
+}
+
+.search-artist-button {
+  width: 80px;
+  height: 50px;
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  background-color: rgb(159, 86, 255);
+  box-shadow: 0 0 10px rgba(159, 86, 255, 0);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.search-artist-button:not(:disabled):hover {
+  box-shadow: 0 0 10px rgb(159, 86, 255);
+  transition: box-shadow 0.3s;
+}
+
+.search-artist-button:disabled {
+  box-shadow: 0 0 10px rgba(159, 86, 255, 0);
+  background-color: grey;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.search-content-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-empty-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(57, 74, 82);
+  user-select: none;
+}
+
+.search-result-title {
+  width: 600px;
+  align-self: flex-start;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(57, 74, 82);
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+}
+
+.search-album-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.search-collection-container {
+  width: 250px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.search-collection-container:hover {
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+
+.search-collection-title {
+  width: 150px;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgb(57, 74, 82);
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+}
+
+.search-collection-image {
+  width: 100px;
+  margin-top: 30px;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.search-artist-title {
+  width: 150px;
+  margin-top: 30px;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(57, 74, 82);
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+}
+
+.search-link-container {
+  padding: 10px 20px;
+  margin-top: 30px;
+  border: 1px solid rgb(49, 62, 82);
+  border-radius: 100px;
+  cursor: pointer;
+
+}
+
+.search-link-container:hover {
+  background-color: rgb(49, 62, 82);
+}
+
+.search-link-container:hover>a {
+  color: white;
+}
+
+.search-link-container>a {
+  text-decoration: none;
+  font-weight: 300;
+  color: rgb(49, 62, 82);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media (max-width: 1320px) {
+  .search-album-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1060px) {
+  .search-album-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .search-artist-input {
+    width: 350px;
+  }
+
+  .search-result-title {
+    text-align: center;
+    align-self: center;
+  }
+
+  .search-album-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .search-artist-input {
+    width: 300px;
+  }
+
+  .search-result-title {
+    text-align: center;
+    align-self: center;
+  }
+
+  .search-album-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
