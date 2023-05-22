@@ -8,7 +8,7 @@ class NotFound extends Component {
       <div className="not-found">
         <Header />
 
-        <h1 className="not-found-title" >Oops...</h1>
+        <h1 className="not-found-title" >Page not found.</h1>
       </div>
     );
   }
